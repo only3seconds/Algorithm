@@ -38,8 +38,7 @@ public class QuickSort {
             array[right] = array[left];
         }
         array[left] = key;
-        return left
-                ;
+        return left;
 
     }
 }
