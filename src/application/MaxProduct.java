@@ -1,7 +1,10 @@
-package pinduoduo;
+package application;
 
 import java.util.Scanner;
 
+/**
+ * 拼多多笔试
+ */
 public class MaxProduct {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);

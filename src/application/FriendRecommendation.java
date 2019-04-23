@@ -1,4 +1,4 @@
-package pinduoduo;
+package application;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -6,6 +6,7 @@ import java.util.Map;
 import java.util.Scanner;
 
 /**
+ * 拼多多笔试
  * 给定一个含有N个用户的朋友列表，对于一个指定用户，找出这个用户最可能认识的人，
  * 最可能认识的人的定义为这个人和当前用户不是朋友关系，但有最多的共同朋友。
  * 朋友关系是相互的（如果A列出B为朋友，B也会列出A为朋友），

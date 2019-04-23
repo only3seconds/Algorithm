@@ -1,8 +1,9 @@
-package pinduoduo;
+package application;
 
 import java.util.Scanner;
 
 /**
+ * 拼多多笔试
  * 自动售货机有N瓶复制可乐。复制可乐非常神奇，喝了它的人会复制出一个自己来！
  * 现在有Alice,Bob,Cathy,Dave四个人在排队买复制可乐。
  * 买完的人会马上喝掉，然后他和他的副本会重新去队伍的最后面排队买可乐。
