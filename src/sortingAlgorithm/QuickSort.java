@@ -1,4 +1,4 @@
-package xiecheng;
+package sortingAlgorithm;
 
 import java.util.Arrays;
 

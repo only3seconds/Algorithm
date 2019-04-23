@@ -1,4 +1,4 @@
-package huawei;
+package sortingAlgorithm;
 
 import java.util.Arrays;
 
