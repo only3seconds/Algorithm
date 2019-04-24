@@ -1,11 +1,11 @@
-package sortingAlgorithm;
+package sorting;
 
 import java.util.Arrays;
 
 /**
- * 快速排序 （选取第一个元素作为基准）
- * 时间复杂度：O(nlogn)
- *
+ * 快速排序 （选取第一个元素作为基准）:基于分治的思想，是冒泡排序的改进版
+ * 平均时间复杂度：O(nlogn) 最好O(nlogn) 最坏O(n²)
+ * 不稳定
  */
 
 public class QuickSort {
@@ -31,14 +31,14 @@ public class QuickSort {
             while (left < right && array[right] >= key) {
                 right--;
             }
-            array[left] = array[right];
+            array[left] = array[right]; //会破坏稳定性
             while (left < right && array[left] <= key) {
                 left++;
             }
             array[right] = array[left];
         }
         array[left] = key;
-        return left;
 
+        return left;
     }
 }
