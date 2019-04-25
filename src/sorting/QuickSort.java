@@ -25,6 +25,11 @@ public class QuickSort {
         }
     }
 
+    /**
+     * partition 的时间复杂度为 O(n)
+     * partition 每次确定一个元素的最终位置，并返回这个位置。比这个元素小的数都被派遣到元素左边，比这个元素大的数都被派遣到元素的右边。
+     */
+
     public static int partition(int[] array, int left, int right) {
         int key = array[left];
         while (left < right) {
