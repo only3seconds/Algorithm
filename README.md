@@ -16,21 +16,29 @@
 
 - 注意二维数组只有一行或一列的特殊情况。
 
-- 数组的快速排序算法要熟记于心，并且注意partition函数的应用。
+- 数组的快速排序算法要熟记于心，并且注意partition函数的应用,partition函数每次确定一个元素（记作target)的最终位置，并返回该位置，该位置之前的元素都小于target,该位置之后的元素都大于 target。我们可以判断该返回位置是否满足一定条件来提前结束快速排序。
+
+- 对数组排序可以用 Arrays.sort(array, new Comparator<>())，并且可以自定义比较器，很强大～
 
 **剑指Offer**
 
-[二维数组中的查找](https://www.nowcoder.com/practice/abc3fe2ce8e146608e868a70efebf62e?tpId=13&tqId=11154&tPage=1&rp=1&ru=/ta/coding-interviews&qru=/ta/coding-interviews/question-ranking)
+[二维数组中的查找](https://blog.csdn.net/journey_TripleP/article/details/89574463)
 
-[旋转数组的最小数字](https://www.nowcoder.com/practice/9f3231a991af4f55b95579b44b7a01ba?tpId=13&tqId=11159&rp=1&ru=/ta/coding-interviews&qru=/ta/coding-interviews/question-ranking)
+[旋转数组的最小数字](https://blog.csdn.net/journey_TripleP/article/details/89574588)
 
-[调整数组的顺序使奇数位于偶数前面](https://www.nowcoder.com/practice/beb5aa231adc45b2a5dcc5b62c93f593?tpId=13&tqId=11166&rp=1&ru=/ta/coding-interviews&qru=/ta/coding-interviews/question-ranking)
+[调整数组的顺序使奇数位于偶数前面](https://blog.csdn.net/journey_TripleP/article/details/89574737)
 
-[顺时针打印矩阵](https://www.nowcoder.com/practice/9b4c81a02cd34f76be2659fa0d54342a?tpId=13&tqId=11172&rp=1&ru=/ta/coding-interviews&qru=/ta/coding-interviews/question-ranking)
+[顺时针打印矩阵](https://blog.csdn.net/journey_TripleP/article/details/89574843)
 
-[数组中出现次数超过一半的数字](https://www.nowcoder.com/practice/e8a1b01a2df14cb2b228b30ee6a92163?tpId=13&tqId=11181&rp=1&ru=/ta/coding-interviews&qru=/ta/coding-interviews/question-ranking)
+[数组中出现次数超过一半的数字](https://blog.csdn.net/journey_TripleP/article/details/89574940)
 
-[最小k个数](https://www.nowcoder.com/practice/6a296eb82cf844ca8539b57c23e6e9bf?tpId=13&tqId=11182&rp=1&ru=/ta/coding-interviews&qru=/ta/coding-interviews/question-ranking)
+[最小k个数](https://blog.csdn.net/journey_TripleP/article/details/89575026)
+
+[连续子数组的最大和](https://blog.csdn.net/journey_TripleP/article/details/89575071)
+
+[把数组排成最小的数](https://blog.csdn.net/journey_TripleP/article/details/89575130)
+
+[丑数](https://www.nowcoder.com/practice/6aa9e04fc3794f68acf8778237ba065b?tpId=13&tqId=11186&rp=1&ru=/ta/coding-interviews&qru=/ta/coding-interviews/question-ranking)
 
 **经典题目**
 
@@ -80,9 +88,11 @@
 
 ### 5. 堆
 
-### 寻找无序数组的第k大元素
+**剑指Offer**
 
-[漫画：寻找无序数组的第k大元素](https://mp.weixin.qq.com/s/LKrxeFT9S5NEAHlhHI3nSQ)
+[最小k个数](https://www.nowcoder.com/practice/6a296eb82cf844ca8539b57c23e6e9bf?tpId=13&tqId=11182&rp=1&ru=/ta/coding-interviews&qru=/ta/coding-interviews/question-ranking)
+
+**经典题目**
 
 [Java 实现](https://github.com/only3seconds/Algorithm/tree/master/src/heap)
 
@@ -129,4 +139,14 @@
 
 ### 5. 动态规划 9,31,34,45
 
+[连续子数组的最大和](https://www.nowcoder.com/practice/459bd355da1549fa8a49e350bf3df484?tpId=13&tqId=11183&rp=1&ru=/ta/coding-interviews&qru=/ta/coding-interviews/question-ranking)
+
 ### 6. 回溯法 66,67
+
+### 其他
+
+**剑指Offer**
+
+[整数中1出现的次数](https://www.nowcoder.com/practice/bd7f978302044eee894445e244c7eee6?tpId=13&tqId=11184&rp=1&ru=/ta/coding-interviews&qru=/ta/coding-interviews/question-ranking)
+
+
