@@ -1,38 +1,30 @@
 package test;
 
-import java.util.Arrays;
-import java.util.Comparator;
+import java.util.ArrayList;
+import java.util.Collections;
 
 public class Solution {
     public static void main(String[] args) {
-        int[] numbers = {3, 32, 321};
-        System.out.println(PrintMinNumber(numbers));
+        int[] array = {1,2,3,4,5,6,7,0};
+        System.out.println(InversePairs(array));
     }
-    public static String PrintMinNumber(int[] numbers) {
-        if (numbers == null || numbers.length == 0) {
-            return "";
+    public static int InversePairs(int [] array) {
+        if(array == null || array.length <= 1) {
+            return 0;
         }
-        String[] numStr = new String[numbers.length];
-        for (int i = 0; i < numbers.length; i++) {
-            numStr[i] = String.valueOf(numbers[i]);
-        }
+        ArrayList<Integer> growList = new ArrayList<>();
+        int result = 0;
+        growList.add(array[0]);
 
-        Arrays.sort(numStr, new Comparator<String>() {
-
-            @Override
-            public int compare(String s1, String s2) {
-                String c1 = s1 + s2;
-                String c2 = s2 + s1;
-                return c1.compareTo(c2);
+        for(int i = 1; i < array.length; i++) {
+            int index = 0;
+            while (index < growList.size() && growList.get(index) <= array[i]) {
+                index++;
             }
-        });
-
-        StringBuilder result = new StringBuilder();
-        for (int i = 0; i < numStr.length; i++) {
-            result.append(numStr[i]);
+            result += growList.size()-index;
+            growList.add(array[i]);
+            Collections.sort(growList);
         }
-
-        return result.toString();
+        return result;
     }
 }
-

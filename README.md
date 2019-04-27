@@ -38,7 +38,9 @@
 
 [把数组排成最小的数](https://blog.csdn.net/journey_TripleP/article/details/89575130)
 
-[丑数](https://www.nowcoder.com/practice/6aa9e04fc3794f68acf8778237ba065b?tpId=13&tqId=11186&rp=1&ru=/ta/coding-interviews&qru=/ta/coding-interviews/question-ranking)
+[丑数](https://blog.csdn.net/journey_TripleP/article/details/89606757)
+
+[数组中的逆序对]()
 
 **经典题目**
 
@@ -58,6 +60,7 @@
 [合并两个排序的链表](https://www.nowcoder.com/practice/d8b6b4358f774294a89de2a6ac4d9337?tpId=13&tqId=11169&rp=1&ru=/ta/coding-interviews&qru=/ta/coding-interviews/question-ranking)
 
 [复杂链表的复制](https://www.nowcoder.com/practice/f836b2c43afc4b35ad6adc41ec941dba?tpId=13&tqId=11178&rp=1&ru=/ta/coding-interviews&qru=/ta/coding-interviews/question-ranking)
+
 ### 3. 栈和队列 5,7,9,20,21,22,30,31
 
 **剑指Offer**
@@ -104,6 +107,8 @@
 
 [字符串的排列](https://www.nowcoder.com/practice/fe6b651b66ae47d7acce78ffdd9a96c7?tpId=13&tqId=11180&rp=1&ru=/ta/coding-interviews&qru=/ta/coding-interviews/question-ranking)
 
+[第一个只出现一次的字符](https://www.nowcoder.com/practice/1c82e8cf713b4bbeb2a5b31cf5b0417c?tpId=13&tqId=11187&rp=1&ru=/ta/coding-interviews&qru=/ta/coding-interviews/question-ranking)
+
 ## 二. 常见算法
 
 ### 1. 位运算 15
@@ -137,11 +142,17 @@
 
 [矩形覆盖](https://www.nowcoder.com/practice/72a5a919508a4251859fb2cfb987a0e6?tpId=13&tqId=11163&rp=1&ru=/ta/coding-interviews&qru=/ta/coding-interviews/question-ranking)
 
-### 5. 动态规划 9,31,34,45
+### 5. 分治
+
+[快速排序]()
+[归并排序]()
+
+
+### 6. 动态规划 9,31,34,45
 
 [连续子数组的最大和](https://www.nowcoder.com/practice/459bd355da1549fa8a49e350bf3df484?tpId=13&tqId=11183&rp=1&ru=/ta/coding-interviews&qru=/ta/coding-interviews/question-ranking)
 
-### 6. 回溯法 66,67
+### 7. 回溯法 66,67
 
 ### 其他
 
