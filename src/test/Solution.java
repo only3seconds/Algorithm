@@ -1,30 +1,32 @@
 package test;
 
-import java.util.ArrayList;
-import java.util.Collections;
+import java.util.HashMap;
 
+//num1,num2分别为长度为1的数组。传出参数
+//将num1[0],num2[0]设置为返回结果
 public class Solution {
-    public static void main(String[] args) {
-        int[] array = {1,2,3,4,5,6,7,0};
-        System.out.println(InversePairs(array));
-    }
-    public static int InversePairs(int [] array) {
-        if(array == null || array.length <= 1) {
-            return 0;
-        }
-        ArrayList<Integer> growList = new ArrayList<>();
-        int result = 0;
-        growList.add(array[0]);
+    public void FindNumsAppearOnce(int [] array,int num1[] , int num2[]) {
 
-        for(int i = 1; i < array.length; i++) {
-            int index = 0;
-            while (index < growList.size() && growList.get(index) <= array[i]) {
-                index++;
+        HashMap<Integer, Integer> map = new HashMap<>();
+
+        for(int num: array) {
+            if(!map.containsKey(num)) {
+                map.put(num, 1);
+            } else {
+                map.put(num, map.get(num)+1);
             }
-            result += growList.size()-index;
-            growList.add(array[i]);
-            Collections.sort(growList);
         }
-        return result;
+
+        int flag = 0;
+        for(int num: array) {
+            if(map.get(num) == 1) {
+                if(flag == 0) {
+                    num1[0] = num;
+                } else {
+                    num2[0] = num;
+                }
+            }
+        }
+
     }
 }

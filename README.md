@@ -6,7 +6,7 @@
 
 - 数组具有随机访问特性，灵活使用数组的索引；
 
-- 对于有序或局部有序的一维数组，要想到二分查找算法；
+- 对于有序或局部有序的一维数组，要想到二分查找算法,并学会随机应变；
 
 - 遍历二维数组，用行指针和列指针，通过行列指针移动定位某个特定的元素；
 
@@ -40,7 +40,11 @@
 
 [丑数](https://blog.csdn.net/journey_TripleP/article/details/89606757)
 
-[数组中的逆序对]()
+[数组中的逆序对](https://blog.csdn.net/journey_TripleP/article/details/89643268)
+
+[数字在排序数组中的出现的次数](https://blog.csdn.net/journey_TripleP/article/details/89645876)
+
+[数组中只出现一次的数字](https://www.nowcoder.com/practice/e02fdb54d7524710a7d664d082bb7811?tpId=13&tqId=11193&rp=1&ru=/ta/coding-interviews&qru=/ta/coding-interviews/question-ranking)
 
 **经典题目**
 
@@ -60,6 +64,8 @@
 [合并两个排序的链表](https://www.nowcoder.com/practice/d8b6b4358f774294a89de2a6ac4d9337?tpId=13&tqId=11169&rp=1&ru=/ta/coding-interviews&qru=/ta/coding-interviews/question-ranking)
 
 [复杂链表的复制](https://www.nowcoder.com/practice/f836b2c43afc4b35ad6adc41ec941dba?tpId=13&tqId=11178&rp=1&ru=/ta/coding-interviews&qru=/ta/coding-interviews/question-ranking)
+
+[两个链表的第一个公共节点](https://www.nowcoder.com/practice/6ab1d9a29e88450685099d45c9e31e46?tpId=13&tqId=11189&rp=1&ru=/ta/coding-interviews&qru=/ta/coding-interviews/question-ranking)
 
 ### 3. 栈和队列 5,7,9,20,21,22,30,31
 
@@ -89,6 +95,10 @@
 
 [二叉搜索树与双向链表](https://www.nowcoder.com/practice/947f6eb80d944a84850b0538bf0ec3a5?tpId=13&tqId=11179&rp=1&ru=/ta/coding-interviews&qru=/ta/coding-interviews/question-ranking)
 
+[二叉树的深度](https://www.nowcoder.com/practice/435fb86331474282a3499955f0a41e8b?tpId=13&tqId=11191&rp=1&ru=/ta/coding-interviews&qru=/ta/coding-interviews/question-ranking)
+
+[平衡二叉树](https://www.nowcoder.com/practice/8b3b95850edb4115918ecebdf1b4d222?tpId=13&tqId=11192&rp=1&ru=/ta/coding-interviews&qru=/ta/coding-interviews/question-ranking)
+
 ### 5. 堆
 
 **剑指Offer**
@@ -117,6 +127,8 @@
 
 [数值的整数次方](https://www.nowcoder.com/practice/1a834e5e3e1a4b7ba251417554e07c00?tpId=13&tqId=11165&rp=1&ru=/ta/coding-interviews&qru=/ta/coding-interviews/question-ranking)
 
+[数组中只出现一次的数字](https://www.nowcoder.com/practice/e02fdb54d7524710a7d664d082bb7811?tpId=13&tqId=11193&rp=1&ru=/ta/coding-interviews&qru=/ta/coding-interviews/question-ranking)
+
 ### 2. 查找 4,8,11,50,53
 
 [寻找一个数组中出现次数最多的元素]()
@@ -127,6 +139,7 @@
 
 [冒泡排序]()
 [快速排序]()
+[归并排序]()
 
 **剑指Offer**
 
