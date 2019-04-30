@@ -1,30 +1,27 @@
 package test;
 
-import java.util.HashMap;
+import java.util.Arrays;
 
-//num1,num2分别为长度为1的数组。传出参数
-//将num1[0],num2[0]设置为返回结果
 public class Solution {
-    public void FindNumsAppearOnce(int [] array,int num1[] , int num2[]) {
-
-        HashMap<Integer, Integer> map = new HashMap<>();
-
-        for(int num: array) {
-            if(!map.containsKey(num)) {
-                map.put(num, 1);
-            } else {
-                map.put(num, map.get(num)+1);
-            }
+    // Parameters:
+    //    numbers:     an array of integers
+    //    length:      the length of array numbers
+    //    duplication: (Output) the duplicated number in the array number,length of duplication array is 1,so using duplication[0] = ? in implementation;
+    //                  Here duplication like pointor in C/C++, duplication[0] equal *duplication in C/C++
+    //    这里要特别注意~返回任意重复的一个，赋值duplication[0]
+    // Return value:       true if the input is valid, and there are some duplications in the array number
+    //                     otherwise false
+    public boolean duplicate(int numbers[],int length,int [] duplication) {
+        if (numbers == null || length <= 1) {
+            return false;
         }
 
-        int flag = 0;
-        for(int num: array) {
-            if(map.get(num) == 1) {
-                if(flag == 0) {
-                    num1[0] = num;
-                } else {
-                    num2[0] = num;
-                }
+        Arrays.sort(numbers);
+
+        for (int i = 0; i < length-1; i++) {
+            if (numbers[i] == numbers[i+1]) {
+                duplication[0] = numbers[i];
+                return true;
             }
         }
 
