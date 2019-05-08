@@ -65,15 +65,25 @@
 [寻找一个数组中出现次数最多的元素]()
 
 
-### 2. 链表 3,6,14,15,16,18,22,23,24,25,35,16,52,55,56
+### 2. 链表 
+
+- 链表递归遍历；
+
+- ArrayList 的 add(index, elem)方法可以用来逆序存储链表的值；
+
+- 链表中经常使用快慢指针slow和fast解决一些问题；
+
+- 链表中常用三指针法进行修改指针等操作；
+
+- 灵活使用链表的头插法；
 
 **剑指Offer**
 
-[从尾到头打印列表](https://www.nowcoder.com/practice/d0267f7f55b3412ba93bd35cfa8e8035?tpId=13&tqId=11156&rp=1&ru=/ta/coding-interviews&qru=/ta/coding-interviews/question-ranking)
+[从尾到头打印列表](https://blog.csdn.net/journey_TripleP/article/details/89964446)
 
-[链表中倒数第k个节点](https://www.nowcoder.com/practice/529d3ae5a407492994ad2a246518148a?tpId=13&tqId=11167&rp=1&ru=/ta/coding-interviews&qru=/ta/coding-interviews/question-ranking)
+[链表中倒数第k个节点](https://blog.csdn.net/journey_TripleP/article/details/89968190)
 
-[反转链表](https://www.nowcoder.com/practice/75e878df47f24fdc9dc3e400ec6058ca?tpId=13&tqId=11168&rp=1&ru=/ta/coding-interviews&qru=/ta/coding-interviews/question-ranking)
+[反转链表](https://blog.csdn.net/journey_TripleP/article/details/89971491)
 
 [合并两个排序的链表](https://www.nowcoder.com/practice/d8b6b4358f774294a89de2a6ac4d9337?tpId=13&tqId=11169&rp=1&ru=/ta/coding-interviews&qru=/ta/coding-interviews/question-ranking)
 
