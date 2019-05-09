@@ -2,35 +2,53 @@ package test;
 
 public class Solution {
 
-    public class ListNode {
-        int val;
-        ListNode next = null;
 
-        ListNode(int val) {
-            this.val = val;
+    public class RandomListNode {
+        int label;
+        RandomListNode next = null;
+        RandomListNode random = null;
+
+        RandomListNode(int label) {
+            this.label = label;
         }
     }
 
 
-    public ListNode ReverseList(ListNode head) {
-
-        if (head == null) {
-            return null;
+    public RandomListNode Clone(RandomListNode pHead) {
+        if (pHead == null) {
+            return  null;
         }
 
-        ListNode newHead = new ListNode(head.val);
-        newHead.next = null;
-        head = head.next;
-        ListNode temp;
+        RandomListNode newHead = new RandomListNode(-1); //辅助头结点
+        RandomListNode p = newHead; //新链表的工作结点
 
-        while (head != null) {
-            temp = head;
-            head = head.next;
-            temp.next = newHead;
-            newHead = temp;
+
+        while (pHead != null) {
+            //复制当前结点
+            RandomListNode copy = new RandomListNode(pHead.label);
+
+            //复制当前结点的next结点
+            RandomListNode copyNext = null;
+            if (pHead.next != null) {
+                copyNext = new RandomListNode(pHead.next.label);
+            }
+
+            //复制当前结点的random结点
+            RandomListNode copyRandom = null;
+            if (pHead.random != null) {
+                copyRandom = new RandomListNode(pHead.random.label);
+            }
+
+            copy.next = copyNext;
+            copy.random = copyRandom;
+
+            p.next = copy;
+            p = p.next;
+            pHead = pHead.next;
         }
 
-        return newHead;
+        return newHead.next;
+
     }
 
 }

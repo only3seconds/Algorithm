@@ -75,7 +75,7 @@
 
 - 链表中常用三指针法进行修改指针等操作；
 
-- 灵活使用链表的头插法；
+- 灵活使用链表的头插法、尾插法；
 
 **剑指Offer**
 
@@ -85,7 +85,7 @@
 
 [反转链表](https://blog.csdn.net/journey_TripleP/article/details/89971491)
 
-[合并两个排序的链表](https://www.nowcoder.com/practice/d8b6b4358f774294a89de2a6ac4d9337?tpId=13&tqId=11169&rp=1&ru=/ta/coding-interviews&qru=/ta/coding-interviews/question-ranking)
+[合并两个排序的链表](https://blog.csdn.net/journey_TripleP/article/details/90025067)
 
 [复杂链表的复制](https://www.nowcoder.com/practice/f836b2c43afc4b35ad6adc41ec941dba?tpId=13&tqId=11178&rp=1&ru=/ta/coding-interviews&qru=/ta/coding-interviews/question-ranking)
 
