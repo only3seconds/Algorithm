@@ -77,6 +77,8 @@
 
 - 灵活使用链表的头插法、尾插法；
 
+- 链表中插入一个结点，要先挂后断；
+
 **剑指Offer**
 
 [从尾到头打印列表](https://blog.csdn.net/journey_TripleP/article/details/89964446)
@@ -87,13 +89,17 @@
 
 [合并两个排序的链表](https://blog.csdn.net/journey_TripleP/article/details/90025067)
 
-[复杂链表的复制](https://www.nowcoder.com/practice/f836b2c43afc4b35ad6adc41ec941dba?tpId=13&tqId=11178&rp=1&ru=/ta/coding-interviews&qru=/ta/coding-interviews/question-ranking)
+[复杂链表的复制](https://blog.csdn.net/journey_TripleP/article/details/90108383)
 
-[两个链表的第一个公共节点](https://www.nowcoder.com/practice/6ab1d9a29e88450685099d45c9e31e46?tpId=13&tqId=11189&rp=1&ru=/ta/coding-interviews&qru=/ta/coding-interviews/question-ranking)
+[两个链表的第一个公共节点](https://blog.csdn.net/journey_TripleP/article/details/90109949)
 
 [链表中环的入口结点](https://www.nowcoder.com/practice/253d2c59ec3e4bc68da16833f79a38e4?tpId=13&tqId=11208&rp=1&ru=/ta/coding-interviews&qru=/ta/coding-interviews/question-ranking)
 
 [删除列表中重复的结点](https://www.nowcoder.com/practice/fc533c45b73a41b0b44ccba763f866ef?tpId=13&tqId=11209&rp=1&ru=/ta/coding-interviews&qru=/ta/coding-interviews/question-ranking)
+
+**经典题目**
+
+[判断一个链表是否有环]()
 
 ### 3. 栈和队列 5,7,9,20,21,22,30,31
 
