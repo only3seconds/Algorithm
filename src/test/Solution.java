@@ -1,8 +1,5 @@
 package test;
 
-import java.util.HashMap;
-import java.util.HashSet;
-import java.util.Stack;
 
 public class Solution {
 
@@ -16,47 +13,58 @@ public class Solution {
         }
     }
 
-    public static ListNode FindFirstCommonNode(ListNode pHead1, ListNode pHead2) {
-        if (pHead1 == null || pHead2 == null) {
+    public static ListNode EntryNodeOfLoop(ListNode pHead) {
+        if (pHead == null) {
             return null;
         }
 
-        HashSet<ListNode> set1 = new HashSet<>();
+        ListNode node1 = pHead;
+        ListNode node2 = meetingNodeOfLoop(pHead);
 
-        while (pHead1 != null) {
-            set1.add(pHead1);
-            pHead1 = pHead1.next;
+        if (node2 == null) {
+            return null;
         }
 
-        while (pHead2 != null) {
-            if (set1.contains(pHead2)) {
-                return pHead2;
+        while (node1 != node2) {
+            node1 = node1.next;
+            node2 = node2.next;
+        }
+
+        return node1;
+
+    }
+
+    public static ListNode meetingNodeOfLoop(ListNode pHead) {
+        if (pHead == null) {
+            return null;
+        }
+
+        ListNode slow = pHead;
+        ListNode fast = pHead;
+
+        while (fast != null && fast.next != null) {
+            slow = slow.next;
+            fast = fast.next.next;
+
+            if (slow == fast) {
+                return slow;
             }
-            pHead2 = pHead2.next;
         }
-
         return null;
     }
 
     public static void main(String[] args) {
-        ListNode pHead1 = new ListNode(0);
-        ListNode A = new ListNode(1);
-        ListNode B = new ListNode(2);
-        ListNode C = new ListNode(3);
+        ListNode head = new ListNode(0);
+        ListNode node1 = new ListNode(1);
+        ListNode node2 = new ListNode(2);
+        ListNode node3 = new ListNode(3);
 
-        ListNode pHead2 = new ListNode(4);
-        ListNode A2 = new ListNode(8);
-        ListNode A3 = new ListNode(5);
-        ListNode B2 = new ListNode(2);
-        ListNode C2 = new ListNode(3);
+        head.next = node1;
+        node1.next = node2;
+        node2.next = node3;
+        node3.next = null;
 
-        pHead2.next = A2;
-        A2.next = A3;
-        A3.next = B2;
-        B2.next = C2;
-        C2.next = null;
-
-        System.out.println(FindFirstCommonNode(pHead1, pHead2));
+        System.out.println(EntryNodeOfLoop(head));
 
     }
 
