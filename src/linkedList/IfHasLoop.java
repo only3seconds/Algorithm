@@ -5,15 +5,6 @@ package linkedList;
  */
 public class IfHasLoop {
 
-    public static class ListNode {
-        int val;
-        ListNode next = null;
-
-        ListNode(int val) {
-            this.val = val;
-        }
-    }
-
     public static boolean ifHasLoop(ListNode pHead) {
         if (pHead == null || pHead.next == null) {
             return false;
