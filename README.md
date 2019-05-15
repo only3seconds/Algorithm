@@ -77,7 +77,7 @@
 
 - 灵活使用链表的头插法、尾插法；
 
-- 链表中插入一个结点，要先挂后断；
+- 链表中插入一个结点，要先挂后断.
 
 **剑指Offer**
 
@@ -95,7 +95,7 @@
 
 [链表中环的入口结点](https://blog.csdn.net/journey_TripleP/article/details/90200947)
 
-[删除链表中重复的结点](https://www.nowcoder.com/practice/fc533c45b73a41b0b44ccba763f866ef?tpId=13&tqId=11209&rp=1&ru=/ta/coding-interviews&qru=/ta/coding-interviews/question-ranking)
+[删除链表中重复的结点](https://blog.csdn.net/journey_TripleP/article/details/90230860)
 
 **经典题目**
 
@@ -105,9 +105,9 @@
 
 **剑指Offer**
 
-[用两个栈实现队列](https://www.nowcoder.com/practice/54275ddae22f475981afa2244dd448c6?tpId=13&tqId=11158&rp=1&ru=/ta/coding-interviews&qru=/ta/coding-interviews/question-ranking)
+[用两个栈实现队列](https://blog.csdn.net/journey_TripleP/article/details/90232236)
 
-[包含min函数的栈](https://www.nowcoder.com/practice/4c776177d2c04c2494f2555c9fcc1e49?tpId=13&tqId=11173&rp=1&ru=/ta/coding-interviews&qru=/ta/coding-interviews/question-ranking)
+[包含min函数的栈](https://blog.csdn.net/journey_TripleP/article/details/90233293)
 
 [栈的压入弹出序列](https://www.nowcoder.com/practice/d77d11405cc7470d82554cb392585106?tpId=13&tqId=11174&rp=1&ru=/ta/coding-interviews&qru=/ta/coding-interviews/question-ranking)
 
