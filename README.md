@@ -115,17 +115,25 @@
 
 ### 4. 树
 
+- 树的算法常用递归结构(递归一定要注意递归出口）；
+
+- 掌握树的常用遍历算法：先序、中序和后序遍历；层次遍历；
+
+- 树的深度优先遍历（DFS）就是先序遍历，树的广度优先遍历（BFS）就是层次遍历。
+
+
+
 **剑指Offer**
 
-[重建二叉树](https://www.nowcoder.com/practice/8a19cbe657394eeaac2f6ea9b0f6fcf6?tpId=13&tqId=11157&rp=1&ru=/ta/coding-interviews&qru=/ta/coding-interviews/question-ranking)
+[重建二叉树](https://blog.csdn.net/journey_TripleP/article/details/90379434)
 
-[树的子结构](https://www.nowcoder.com/practice/6e196c44c7004d15b1610b9afca8bd88?tpId=13&tqId=11170&rp=1&ru=/ta/coding-interviews&qru=/ta/coding-interviews/question-ranking)
+[树的子结构](https://blog.csdn.net/journey_TripleP/article/details/90511948)
 
-[二叉树的镜像](https://www.nowcoder.com/practice/564f4c26aa584921bc75623e48ca3011?tpId=13&tqId=11171&rp=1&ru=/ta/coding-interviews&qru=/ta/coding-interviews/question-ranking)
+[二叉树的镜像](https://blog.csdn.net/journey_TripleP/article/details/90513648)
 
 [从上往下打印二叉树](https://www.nowcoder.com/practice/7fe2212963db4790b57431d9ed259701?tpId=13&tqId=11175&rp=1&ru=/ta/coding-interviews&qru=/ta/coding-interviews/question-ranking)
 
-[二叉树的后序遍历序列](https://www.nowcoder.com/practice/a861533d45854474ac791d90e447bafd?tpId=13&tqId=11176&rp=1&ru=/ta/coding-interviews&qru=/ta/coding-interviews/question-ranking)
+[二叉树的后序遍历序列](https://blog.csdn.net/journey_TripleP/article/details/90514175)
 
 [二叉树中和为某一值的路径](https://www.nowcoder.com/practice/b736e784e3e34731af99065031301bca?tpId=13&tqId=11177&rp=1&ru=/ta/coding-interviews&qru=/ta/coding-interviews/question-ranking)
 
@@ -146,6 +154,7 @@
 [序列化二叉树](https://www.nowcoder.com/practice/cf7e25aa97c04cc1a68c8f040e71fb84?tpId=13&tqId=11214&rp=1&ru=/ta/coding-interviews&qru=/ta/coding-interviews/question-ranking)
 
 [二叉搜索树的第K个节点](https://www.nowcoder.com/practice/ef068f602dde4d28aab2b210e859150a?tpId=13&tqId=11215&rp=1&ru=/ta/coding-interviews&qru=/ta/coding-interviews/question-ranking)
+
 ### 5. 堆
 
 **剑指Offer**
@@ -212,6 +221,8 @@
 [调整数组的顺序使奇数位于偶数前面](https://www.nowcoder.com/practice/beb5aa231adc45b2a5dcc5b62c93f593?tpId=13&tqId=11166&rp=1&ru=/ta/coding-interviews&qru=/ta/coding-interviews/question-ranking)
 
 ### 4. 递归
+
+- 思考递归的时候一定不要去一步一步看它执行了什么，思考的正确打开方式应该是，首先假设子问题都已经完美处理，我们只需要处理一下最终的问题即可。子问题的处理方式与最终那个处理方式一样，只需要将问题规模要以1的进制缩小。最后一定要注意一下递归出口条件。
 
 [斐波那契数列](https://www.nowcoder.com/practice/c6c7742f5ba7442aada113136ddea0c3?tpId=13&tqId=11160&rp=1&ru=/ta/coding-interviews&qru=/ta/coding-interviews/question-ranking)
 

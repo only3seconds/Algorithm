@@ -1,24 +1,40 @@
-package test;
+package tree;
 
-public class Solution {
-    public static class TreeNode {
-        int val;
-        TreeNode left;
-        TreeNode right;
+import java.util.Arrays;
 
-        TreeNode(int x) {
-            val = x;
-        }
-    }
+/**
+ * 根据树的先序遍历和中序遍历重构二叉树
+ */
+public class ReConstructBinaryTree {
 
     public static TreeNode reConstructBinaryTree(int[] pre, int[] in) {
-        return reConstructBinaryTreeHandler(pre, 0, pre.length - 1, in, 0, in.length - 1);
 
+
+        if (pre.length == 0 || in.length == 0) {
+            return null;
+        }
+
+        TreeNode root = new TreeNode(pre[0]);
+
+        int index = 0;
+        while (index < in.length && in[index] != root.val) {
+            index++;
+        }
+
+
+        root.left = reConstructBinaryTree(Arrays.copyOfRange(pre, 1, index + 1), Arrays.copyOfRange(in, 0, index));
+        root.right = reConstructBinaryTree(Arrays.copyOfRange(pre, index + 1, pre.length), Arrays.copyOfRange(in, index + 1, in.length));
+
+        return root;
+
+
+        //return reConstructBinaryTreeHandler(pre, 0, pre.length - 1, in, 0, in.length - 1);
 
     }
 
     public static TreeNode reConstructBinaryTreeHandler(int[] pre, int preLeft, int preRight, int[] in, int inLeft, int inRight) {
 
+        //递归出口
         if (preLeft > preRight || inLeft > inRight) {
             return null;
         }
