@@ -4,13 +4,14 @@ import java.util.LinkedList;
 import java.util.Queue;
 
 /**
- * 二叉树的层次遍历
+ * 二叉树的层次遍历,也叫广度优先遍历
  */
-public class LevelTravel {
+public class LevelTraversal {
     public static void leveTravelOfBinaryTree(TreeNode root) {
         if (root == null) {
-            System.out.println("Tree is null!");
+            System.out.println("Tree is empty!");
         }
+
         Queue<TreeNode> nodes = new LinkedList<>();
 
         nodes.offer(root);
@@ -30,7 +31,7 @@ public class LevelTravel {
     }
 
     public static void main(String[] args) {
-        TreeNode root = null;
+        TreeNode root = new TreeNode(3);
         TreeNode node1 = new TreeNode(6);
         TreeNode node2 = new TreeNode(10);
         TreeNode node3 = new TreeNode(5);

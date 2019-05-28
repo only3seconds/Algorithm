@@ -131,11 +131,11 @@
 
 [二叉树的镜像](https://blog.csdn.net/journey_TripleP/article/details/90513648)
 
-[从上往下打印二叉树](https://www.nowcoder.com/practice/7fe2212963db4790b57431d9ed259701?tpId=13&tqId=11175&rp=1&ru=/ta/coding-interviews&qru=/ta/coding-interviews/question-ranking)
+[从上往下打印二叉树](https://blog.csdn.net/journey_TripleP/article/details/90514175)
 
-[二叉树的后序遍历序列](https://blog.csdn.net/journey_TripleP/article/details/90514175)
+[二叉搜索树的后序遍历序列](https://blog.csdn.net/journey_TripleP/article/details/90634500)
 
-[二叉树中和为某一值的路径](https://www.nowcoder.com/practice/b736e784e3e34731af99065031301bca?tpId=13&tqId=11177&rp=1&ru=/ta/coding-interviews&qru=/ta/coding-interviews/question-ranking)
+[二叉树中和为某一值的路径](https://blog.csdn.net/journey_TripleP/article/details/90639481)
 
 [二叉搜索树与双向链表](https://www.nowcoder.com/practice/947f6eb80d944a84850b0538bf0ec3a5?tpId=13&tqId=11179&rp=1&ru=/ta/coding-interviews&qru=/ta/coding-interviews/question-ranking)
 
