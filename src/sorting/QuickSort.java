@@ -32,11 +32,13 @@ public class QuickSort {
 
     public static int partition(int[] array, int left, int right) {
         int key = array[left];
+
         while (left < right) {
             while (left < right && array[right] >= key) {
                 right--;
             }
             array[left] = array[right]; //会破坏稳定性
+            
             while (left < right && array[left] <= key) {
                 left++;
             }

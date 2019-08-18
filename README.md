@@ -1,28 +1,185 @@
-# 数据结构和算法
+# 数据结构
 
-## 一.数据结构
+## 一. 线性表
 
 ### 1. 数组
 
-- 数组具有随机访问特性，灵活使用数组的索引；
+- 数组具有随机访问特性，灵活使用数组的索引
 
-- 数组有序的话，问题往往会变得简单；
+- 数组有序的话，问题往往会变得简单
 
-- 对于有序或局部有序的一维数组，要想到二分查找算法,并学会随机应变；
+- 对于有序或局部有序的一维数组，要想到二分查找算法,并学会随机应变
 
-- 遍历二维数组，用行指针和列指针，通过行列指针移动定位某个特定的元素；
+- 对于元素特殊的数组，注意寻找特殊点，比如有序的临界点，二维数组的四个角
 
-- 对于元素特殊的数组，注意寻找特殊点，比如有序的临界点，二维数组的四个角；
+- 对于二维数组，定位某个特定元素需要 行指针i和列指针j；定位一个二维数组的子数组则需要 row1,row2,col1,col2
 
-- 对于二维数组，定位某个特定元素需要 行指针i和列指针j；定位一个二维数组的子数组则需要 row1,row2,col1,col2. 
-
-- 注意二维数组只有一行或一列的特殊情况。
+- 注意二维数组只有一行或一列的特殊情况
 
 - 数组的快速排序算法要熟记于心，并且注意partition函数的应用,partition函数每次确定一个元素（记作target)的最终位置，并返回该位置，该位置之前的元素都小于target,该位置之后的元素都大于 target。我们可以判断该返回位置是否满足一定条件来提前结束快速排序。
 
-- 对数组排序可以用 Arrays.sort(array, new Comparator<>())，并且可以自定义比较器，很强大～
+- 对数组排序可以用 Arrays.sort(array, new Comparator<>())，并且可以自定义比较器
 
-**剑指Offer**
+**专题一：二分查找及其变形**
+
+### 2. 链表
+
+- 链表递归遍历
+
+- ArrayList 的 add(index, elem)方法可以用来逆序存储链表的值
+
+- 链表中经常使用快慢指针 slow和fast 解决一些问题
+
+- 链表中常用三指针法进行修改指针等操作
+
+- 灵活使用链表的头插法、尾插法
+
+- 链表中插入一个结点，要先挂后断
+
+
+## 二. 栈和队列
+
+- 栈是一种先进后出的数据结构，队列是一种先进先出的数据结构
+
+
+## 三. 树和二叉树
+
+- 树的算法常用递归结构(递归一定要注意递归出口）
+
+- 掌握树的常用遍历算法：深度优先遍历（先序、中序、后序）；广度优先遍历（层次遍历）
+
+- 二叉树：二叉树是每个节点最多有两个子树的树结构
+	
+- 满二叉树： 高度为h，并且由2{h} –1个结点的二叉树，被称为满二叉树
+
+- 完全二叉树：一棵二叉树中，只有最下面两层结点的度可以小于2，并且最下一层的叶结点集中在靠左的若干位置上。这样的二叉树称为完全二叉树。
+	
+- 二叉排序树（二叉搜索树）：左子树结点值＜根结点值＜右子树结点值。所以，对二叉排序树进行中序
+遍历，可以得到一个递增的有序序列
+
+- 平衡二叉树：任意结点的左、右子树高度差的绝对值不超过1，将这样的二叉树称为平衡二叉树，简称平衡树（AVL树）。
+
+### 1. 二叉树
+
+#### （1）二分查找法
+
+#### （2）二叉树遍历
+
+
+### 2. 二分搜索树
+
+#### （1）深度优先遍历（前序、中序、后序遍历）
+
+#### （2）广度优先遍历（层次序列）
+
+### 3. AVL树
+
+**平衡二叉树的插入调整规则**
+
+	（1）插入点位于X的左子节点的左子树——左左 -> 右单旋；
+	（2）插入点位于X的左子节点的右子树——左右 -> 自下而上，先左后右；
+	（3）插入点位于X的右子节点的左子树——右左 -> 自下而上，先右后左 ；
+	（4）插入点位于X的右子节点的右子树——右右 -> 左单旋.
+
+### 4. 红黑树
+
+**（1）为什么需要红黑树？**
+
+普通的二叉查找树在极端情况下可退化成链表，此时的增删查效率都会比较低下。为了避免这种情况，就出现了一些自平衡的查找树，比如 AVL，红黑树等。这些自平衡的查找树通过定义一些性质，将任意节点的左右子树高度差控制在规定范围内，以达到平衡状态。
+	
+**（2）红黑树的性质**
+
+1. 节点是红色或黑色。
+2. 根是黑色。
+3. 所有叶子都是黑色（叶子是NIL节点）。
+4. 每个红色节点必须有两个黑色的子节点。（从每个叶子到根的所有路径上不能有两个连续的红色节点。）
+5. 从任一节点到其每个叶子的所有简单路径都包含相同数目的黑色节点（简称黑高）。
+
+性质4和性质5可保证任意节点到其每个叶子节点路径最长不会超过最短路径的2倍。
+
+**（3）插入操作**
+
+插入的节点是红色的。
+	
+（1）如果插入的是根结点，直接把此结点涂为黑色； 
+
+（2）如果插入结点（N）的父结点(P)是黑色，直接插入红色节点即可；
+
+（3）如果插入节点（N）的父结点（P）是红色且叔叔节点（U）是红色 -> 变色即可；
+
+（4）如果插入节点（N）的父结点（P）是红色且叔叔节点（U）是黑色，插入节点是其父节点的左子 -> 父节点（P）变为黑色，祖父节点（G）变为红色，在祖父节点（G）为支点右旋。【变色+右旋】
+
+（5）如果插入节点（N）的父结点（P）是红色且叔叔节点（U）是黑色，插入节点是其父节点的右子 -> 左旋，变成（4）的情况。
+
+[红黑树详解](https://www.cnblogs.com/yyxt/p/4983967.html) 
+
+### 5. B 和 B+ 树
+
+## 四. 字符串和数组
+
+# 算法思想
+
+## 一. 排序
+
+### 1. 选择排序
+
+### 2. 插入排序
+
+### 3. 冒泡排序
+
+### 4. 快速排序
+
+#### （1）普通快速排序
+
+#### （2）双路快速排序
+
+#### （3）三路快速排序
+
+### 5. 希尔排序
+
+### 6. 归并排序
+
+### 7. 堆排序
+
+#### （1）堆
+
+[Java 实现](https://github.com/only3seconds/Algorithm/tree/master/src/heap)
+
+#### （2）上浮和下沉
+
+#### （3）插入元素
+
+#### （4）删除最大元素
+
+#### （5）堆排序
+
+#### （6）堆排序的应用-TopK问题
+
+### 8. 计数排序和流排序
+
+### 9. 排序算法总结
+
+## 二. 递归和回溯法
+
+- 思考递归的时候一定不要去一步一步看它执行了什么，思考的正确打开方式应该是，首先假设子问题都已经完美处理，我们只需要处理一下最终的问题即可。子问题的处理方式与最终那个处理方式一样，只需要将问题规模要以1的进制缩小。最后一定要注意一下递归出口条件。
+
+## 三. 动态规划
+
+### 1. 斐波那契数列
+
+### 2. 背包问题
+
+### 3. 最长上升子序列
+
+### 4. 最长公共子序列
+
+## 四. 贪心算法
+
+# 练习题
+
+## 一. 剑指Offer
+
+### 1. 数组
 
 [二维数组中的查找](https://blog.csdn.net/journey_TripleP/article/details/89574463)
 
@@ -60,26 +217,7 @@
 
 [矩阵中的路径](https://www.nowcoder.com/practice/c61c6999eecb4b8f88a98f66b273a3cc?tpId=13&tqId=11218&rp=1&ru=/ta/coding-interviews&qru=/ta/coding-interviews/question-ranking)
 
-**经典题目**
-
-[寻找一个数组中出现次数最多的元素]()
-
-
 ### 2. 链表 
-
-- 链表递归遍历；
-
-- ArrayList 的 add(index, elem)方法可以用来逆序存储链表的值；
-
-- 链表中经常使用快慢指针slow和fast解决一些问题；
-
-- 链表中常用三指针法进行修改指针等操作；
-
-- 灵活使用链表的头插法、尾插法；
-
-- 链表中插入一个结点，要先挂后断.
-
-**剑指Offer**
 
 [从尾到头打印列表](https://blog.csdn.net/journey_TripleP/article/details/89964446)
 
@@ -97,13 +235,7 @@
 
 [删除链表中重复的结点](https://blog.csdn.net/journey_TripleP/article/details/90230860)
 
-**经典题目**
-
-[判断一个链表是否有环](https://blog.csdn.net/journey_TripleP/article/details/90200947)
-
-### 3. 栈和队列 5,7,9,20,21,22,30,31
-
-**剑指Offer**
+### 3. 栈和队列
 
 [用两个栈实现队列](https://blog.csdn.net/journey_TripleP/article/details/90232236)
 
@@ -114,16 +246,6 @@
 [滑动窗口的最大值](https://blog.csdn.net/journey_TripleP/article/details/89919647)
 
 ### 4. 树
-
-- 树的算法常用递归结构(递归一定要注意递归出口）；
-
-- 掌握树的常用遍历算法：先序、中序和后序遍历；层次遍历；
-
-- 树的深度优先遍历（DFS）就是先序遍历，树的广度优先遍历（BFS）就是层次遍历。
-
-
-
-**剑指Offer**
 
 [重建二叉树](https://blog.csdn.net/journey_TripleP/article/details/90379434)
 
@@ -157,17 +279,9 @@
 
 ### 5. 堆
 
-**剑指Offer**
-
 [最小k个数](https://www.nowcoder.com/practice/6a296eb82cf844ca8539b57c23e6e9bf?tpId=13&tqId=11182&rp=1&ru=/ta/coding-interviews&qru=/ta/coding-interviews/question-ranking)
 
-**经典题目**
-
-[Java 实现](https://github.com/only3seconds/Algorithm/tree/master/src/heap)
-
-### 6. 字符串 2,4,5,12,20,27,28,34,43,44,46,49,50,52,53,58,67
-
-**剑指Offer**
+### 6. 字符串
 
 [替换空格](https://www.nowcoder.com/practice/4060ac7e3e404ad1a894ef3e17650423?tpId=13&tqId=11155&rp=1&ru=/ta/coding-interviews&qru=/ta/coding-interviews/question-ranking)
 
@@ -186,11 +300,8 @@
 [表示数值的字符串](https://www.nowcoder.com/practice/6f8c901d091949a5837e24bb82a731f2?tpId=13&tqId=11206&rp=1&ru=/ta/coding-interviews&qru=/ta/coding-interviews/question-ranking)
 
 [字符流中第一个不重复的字符](https://www.nowcoder.com/practice/00de97733b8e4f97a3fb5c680ee10720?tpId=13&tqId=11207&rp=1&ru=/ta/coding-interviews&qru=/ta/coding-interviews/question-ranking)
-## 二. 常见算法
 
-### 1. 位运算 15
-
-**剑指Offer**
+### 7. 位运算
 
 [二进制中1的个数](https://www.nowcoder.com/practice/8ee967e43c2c4ec193b040ea7fbb10b8?tpId=13&tqId=11164&rp=1&ru=/ta/coding-interviews&qru=/ta/coding-interviews/question-ranking)
 
@@ -200,29 +311,8 @@
 
 [不用加减乘除做加法](https://www.nowcoder.com/practice/59ac416b4b944300b617d4f7f111b215?tpId=13&tqId=11201&rp=1&ru=/ta/coding-interviews&qru=/ta/coding-interviews/question-ranking)
 
-**其他**
-[数组a中只有一个数出现一次，其他数字都出现了3次，找出这个数字]()
 
-
-### 2. 查找 4,8,11,50,53
-
-[寻找一个数组中出现次数最多的元素]()
-
-### 3. 排序 39,40
-
-**经典排序算法**
-
-[冒泡排序]()
-[快速排序]()
-[归并排序]()
-
-**剑指Offer**
-
-[调整数组的顺序使奇数位于偶数前面](https://www.nowcoder.com/practice/beb5aa231adc45b2a5dcc5b62c93f593?tpId=13&tqId=11166&rp=1&ru=/ta/coding-interviews&qru=/ta/coding-interviews/question-ranking)
-
-### 4. 递归
-
-- 思考递归的时候一定不要去一步一步看它执行了什么，思考的正确打开方式应该是，首先假设子问题都已经完美处理，我们只需要处理一下最终的问题即可。子问题的处理方式与最终那个处理方式一样，只需要将问题规模要以1的进制缩小。最后一定要注意一下递归出口条件。
+### 8. 递归和回溯
 
 [斐波那契数列](https://www.nowcoder.com/practice/c6c7742f5ba7442aada113136ddea0c3?tpId=13&tqId=11160&rp=1&ru=/ta/coding-interviews&qru=/ta/coding-interviews/question-ranking)
 
@@ -232,27 +322,19 @@
 
 [矩形覆盖](https://www.nowcoder.com/practice/72a5a919508a4251859fb2cfb987a0e6?tpId=13&tqId=11163&rp=1&ru=/ta/coding-interviews&qru=/ta/coding-interviews/question-ranking)
 
-### 5. 分治
-
-[快速排序]()
-[归并排序]()
-
-
-### 6. 动态规划 9,31,34,45
-
-[连续子数组的最大和](https://www.nowcoder.com/practice/459bd355da1549fa8a49e350bf3df484?tpId=13&tqId=11183&rp=1&ru=/ta/coding-interviews&qru=/ta/coding-interviews/question-ranking)
-
-### 7. 回溯法 66,67
-
 [矩阵中的路径](https://www.nowcoder.com/practice/c61c6999eecb4b8f88a98f66b273a3cc?tpId=13&tqId=11218&rp=1&ru=/ta/coding-interviews&qru=/ta/coding-interviews/question-ranking)
 
 [机器人的运动范围](https://www.nowcoder.com/practice/6e5207314b5241fb83f2329e89fdecc8?tpId=13&tqId=11219&rp=1&ru=/ta/coding-interviews&qru=/ta/coding-interviews/question-ranking)
 
+### 9. 动态规划
 
+[连续子数组的最大和](https://www.nowcoder.com/practice/459bd355da1549fa8a49e350bf3df484?tpId=13&tqId=11183&rp=1&ru=/ta/coding-interviews&qru=/ta/coding-interviews/question-ranking)
 
-### 其他
+### 10. 排序 
 
-**剑指Offer**
+[调整数组的顺序使奇数位于偶数前面](https://www.nowcoder.com/practice/beb5aa231adc45b2a5dcc5b62c93f593?tpId=13&tqId=11166&rp=1&ru=/ta/coding-interviews&qru=/ta/coding-interviews/question-ranking)
+
+### 11. 其他
 
 [整数中1出现的次数](https://www.nowcoder.com/practice/bd7f978302044eee894445e244c7eee6?tpId=13&tqId=11184&rp=1&ru=/ta/coding-interviews&qru=/ta/coding-interviews/question-ranking)
 
@@ -264,4 +346,6 @@
 
 [数据流中的中位数](https://www.nowcoder.com/practice/9be0172896bd43948f8a32fb954e1be1?tpId=13&tqId=11216&rp=1&ru=/ta/coding-interviews&qru=/ta/coding-interviews/question-ranking)
 
+## 二. Leetcode
 
+## 三. 公司笔试题
