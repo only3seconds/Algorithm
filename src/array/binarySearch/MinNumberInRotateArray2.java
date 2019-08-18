@@ -2,6 +2,7 @@ package array.binarySearch;
 
 /**
  * 7. 变形：查找旋转数组的最小元素（存在重复项）
+ *  【剑指Offer】旋转数组的最小数字
  */
 public class MinNumberInRotateArray2 {
     public static void main(String[] args) {

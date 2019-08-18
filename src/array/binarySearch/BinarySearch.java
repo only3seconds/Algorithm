@@ -1,14 +1,14 @@
 package array.binarySearch;
 
 /**
- * 1. 基本二分查找
- * 二分查找：只能在有序数组中使用
+ * 1. 基本二分查找: 查找有序数组中某个元素的位置，找不到返回-1或者待插入的位置
+ *
  * 时间复杂度：平均O(logn),最坏O(logn)，最好O(1)
  */
 public class BinarySearch {
     public static void main(String[] args) {
-        int[] data = {1, 2, 3, 6, 8, 34};
-        System.out.println(binarySearch(data, 5));
+        int[] data = {1, 2, 3, 6, 8, 10};
+        System.out.println(binarySearch(data, 11));
         System.out.println(binarySearch(data, 0, data.length - 1, 3));
 
     }
@@ -33,6 +33,8 @@ public class BinarySearch {
                 return middle;
             }
         }
+        // 返回待插入的位置
+        // return low;
         return -1;
     }
 
