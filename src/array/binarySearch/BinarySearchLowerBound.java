@@ -1,7 +1,7 @@
 package array.binarySearch;
 
 /**
- * 3. 变形：查找目标值第一次出现的位置
+ * 3. 变形：查找目标元素第一次出现的位置
  */
 public class BinarySearchLowerBound {
     public static void main(String[] args) {

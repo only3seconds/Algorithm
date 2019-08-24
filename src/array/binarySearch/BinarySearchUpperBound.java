@@ -1,7 +1,7 @@
 package array.binarySearch;
 
 /**
- * 4. 变形：查找目标值最后一次出现的位置
+ * 4. 变形：查找目标元素最后一次出现的位置
  */
 public class BinarySearchUpperBound {
 

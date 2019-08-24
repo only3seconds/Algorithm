@@ -14,9 +14,11 @@ public class MinNumberInRotateArray {
         int low = 0;
         int high = array.length - 1;
 
+        //⚠️没有等号
         while (low < high) {
             int middle = low + (high - low) / 2;
             if (array[middle] > array[high]) {
+                // 此时 middle 属于左半部，最小数一定在 middle 右边（旋转数组的特点：左半部分>右半部分），所以low向右边逼近
                 low = middle + 1;
             } else {
                 high = middle;
