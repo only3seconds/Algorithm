@@ -12,32 +12,10 @@ public class BaseOperation {
             // 字符串的长度
             int len = str.length();
 
-            // 字符串中第 i 个字符
-//            char c = str.charAt(1);
-
-            // 第一个空格的下标
-            int index = str.indexOf(" ");
-            // 最后一个空格的下标
-            int lastIndex = str.lastIndexOf(" ");
-
-            // 分割字符串
-            String[] strs = str.split("\\\\"); //按 \ 进行分割
-
-            // 判断是否包含某个子串
-            boolean ifHas = str.contains("abc");
-            // 字符串某个子串出现的首个位置，-1表示不存在该字符串
-            int subIndex = str.indexOf("ppp");
-
-            // 字符串中字符替换
-            str = str.replace("abc", "ppp");
-
             // 全部转换成大写/小写
             String upperStr = str.toUpperCase();
             String lowerStr = str.toLowerCase();
 
-            // 字符串截取,左闭右开
-//            String str1 = str.substring(3);
-//            String str2 = str.substring(3, 5);
 
             // 十六进制字符串转换为十进制
 //            int decimal = Integer.parseInt(str, 16);

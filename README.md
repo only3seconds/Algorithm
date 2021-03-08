@@ -54,6 +54,9 @@
 
 - 栈是一种先进后出的数据结构，队列是一种先进先出的数据结构
 
+**[队列的数组实现(Java版)](https://blog.csdn.net/weixin_42034276/article/details/86707514)**
+
+
 
 ## 三. 树和二叉树
 
@@ -74,16 +77,18 @@
 
 ### 1. 二叉树
 
-#### （1）二分查找法
+#### （1）深度优先遍历（前序、中序、后序遍历）
 
-#### （2）二叉树遍历
+#### （2）广度优先遍历（层次序列）
+
+**[求二叉树的深度和宽度](https://www.cnblogs.com/xudong-bupt/p/4036190.html)**
 
 
 ### 2. 二分搜索树
 
-#### （1）深度优先遍历（前序、中序、后序遍历）
+[二叉树的插入与删除操作图解](https://www.cnblogs.com/MrListening/p/5782752.html)
 
-#### （2）广度优先遍历（层次序列）
+
 
 ### 3. AVL树
 
@@ -134,6 +139,8 @@
 
 ## 一. 排序
 
+**[排序算法总结](https://blog.csdn.net/yuxin6866/article/details/52771739)**
+
 ### 1. 选择排序
 
 ### 2. 插入排序
@@ -154,7 +161,13 @@
 
 ### 7. 堆排序
 
+**[堆排序的思想](https://www.cnblogs.com/Java3y/p/8639937.html)**
+
 #### （1）堆
+
+[寻找无序数组的第K大元素](https://mp.weixin.qq.com/s/LKrxeFT9S5NEAHlhHI3nSQ)
+
+[漫画：什么是二叉堆？](https://mp.weixin.qq.com/s?__biz=MzIxMjE5MTE1Nw==&mid=2653195207&idx=2&sn=12689c6c1a92e7ec3cce4d423019ec2a&chksm=8c99f91dbbee700b8e760d06b27582037ab0713295dacf2b5a7a7f954c0032fe860aa0bf8b74&scene=21#wechat_redirect)
 
 [Java 实现](https://github.com/only3seconds/Algorithm/tree/master/src/heap)
 
@@ -362,3 +375,23 @@
 ## 二. Leetcode
 
 ## 三. 公司笔试题
+
+## 四. 专题
+
+### 斐波那契数列
+
+1. [斐波那契数列](https://www.nowcoder.com/practice/c6c7742f5ba7442aada113136ddea0c3?tpId=13&tqId=11160&rp=1&ru=/ta/coding-interviews&qru=/ta/coding-interviews/question-ranking)
+
+2. [跳台阶](https://www.nowcoder.com/practice/8c82a5b80378478f9484d87d1c5f12a4?tpId=13&tqId=11161&rp=1&ru=/ta/coding-interviews&qru=/ta/coding-interviews/question-ranking)
+
+3. [变态跳台阶](https://www.nowcoder.com/practice/22243d016f6b47f2a6928b4313c85387?tpId=13&tqId=11162&rp=1&ru=/ta/coding-interviews&qru=/ta/coding-interviews/question-ranking)
+
+3. [矩形覆盖](https://www.nowcoder.com/practice/72a5a919508a4251859fb2cfb987a0e6?tpId=13&tqId=11163&rp=1&ru=/ta/coding-interviews&qru=/ta/coding-interviews/question-ranking)
+
+5. 字符替换
+![](https://img-blog.csdnimg.cn/20190903194726843.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2pvdXJuZXlfVHJpcGxlUA==,size_16,color_FFFFFF,t_70)
+
+![](https://img-blog.csdnimg.cn/20190903194746909.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2pvdXJuZXlfVHJpcGxlUA==,size_16,color_FFFFFF,t_70)
+
+
+

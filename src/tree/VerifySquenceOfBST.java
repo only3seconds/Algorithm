@@ -19,6 +19,7 @@ public class VerifySquenceOfBST {
             return true;
         }
 
+        //找到第一个大于根节点的数
         int index = 0;
         for (; index < right; index++) {
             if (sequence[index] > sequence[right]) {
@@ -26,6 +27,7 @@ public class VerifySquenceOfBST {
             }
         }
 
+        //判断index后面的数是否都大于根节点
         for (int i = index; i < right; i++) {
             if (sequence[i] < sequence[right]) {
                 return false;

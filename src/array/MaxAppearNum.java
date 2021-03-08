@@ -40,7 +40,7 @@ public class MaxAppearNum {
     }
 
     /**
-     * 方法二: 先快速排序，然后比遍历计数找到出现次数最多的元素
+     * 方法二: 先快速排序，然后遍历计数找到出现次数最多的元素
      * 时间复杂度 O(nlogn)
      * @param array
      * @return
